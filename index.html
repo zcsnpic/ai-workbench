@@ -26,7 +26,7 @@
         }
         header {
             text-align: center;
-            padding: 80px 20px 60px;
+            padding: 50px 20px 40px;
             background: linear-gradient(180deg, #ffffff 0%, var(--bg-primary) 100%);
             border-bottom: 1px solid var(--border);
         }
@@ -64,11 +64,11 @@
         .diary-container {
             max-width: 680px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 40px 15px;
         }
         .timeline {
             position: relative;
-            padding-left: 40px;
+            padding-left: 25px;
         }
         .timeline::before {
             content: '';
@@ -81,13 +81,13 @@
         }
         .diary-entry {
             position: relative;
-            margin-bottom: 60px;
-            padding-left: 30px;
+            margin-bottom: 40px;
+            padding-left: 20px;
         }
         .diary-entry::before {
             content: '';
             position: absolute;
-            left: -36px;
+            left: -21px;
             top: 8px;
             width: 12px;
             height: 12px;
@@ -149,10 +149,10 @@
         .diary-content {
             color: var(--text-secondary);
             font-size: 1.05em;
-            line-height: 2;
+            line-height: 1.8;
         }
         .diary-content p {
-            margin-bottom: 1.2em;
+            margin-bottom: 0.8em;
             text-align: justify;
         }
         .entry-footer {
@@ -195,10 +195,12 @@
         }
         @media (max-width: 768px) {
             h1 { font-size: 2em; letter-spacing: 4px; }
-            .diary-container { padding: 40px 15px; }
-            .timeline { padding-left: 30px; }
-            .diary-card { padding: 25px; }
-            .diary-entry { margin-bottom: 40px; }
+            .diary-container { padding: 30px 12px; }
+            .timeline { padding-left: 20px; }
+            .diary-card { padding: 20px; }
+            .diary-entry { margin-bottom: 30px; padding-left: 15px; }
+            .diary-entry::before { left: -16px; }
+            header { padding: 40px 15px 30px; }
         }
     </style>
 </head>
